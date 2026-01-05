@@ -29,7 +29,7 @@ if user_ques:
         st.sidebar.write("I'm trained on maintenance logs. Try asking about 'Torque' or 'Temperature'.")
 
 # --- MAIN UI ---
-st.title("L&T Industrial Asset Reliability Hub")
+st.title("🏗️ Industrial Asset Reliability Hub")
 st.markdown("### Real-time Predictive Maintenance Dashboard")
 
 col1, col2, col3 = st.columns([1, 1, 1])
@@ -81,5 +81,6 @@ if st.button("Run Full Diagnostic"):
 
     with open("report.pdf", "rb") as f:
         st.download_button("📩 Download Diagnostic PDF", f, "Maintenance_Report.pdf")
+
 
 
