@@ -32,9 +32,14 @@ temp_diff = proc_temp - air_temp
 
 # 6. Prediction Logic
 if st.button("Run Diagnostic Analysis"):
-    # Must match the order used during model training!
-    features = np.array([[air_temp, proc_temp, rpm, torque, tool_wear, temp_diff]])
-    prediction = model.predict(features)
+    # CREATE A DATAFRAME with the exact names used in training
+    input_data = pd.DataFrame([[air_temp, proc_temp, rpm, torque, tool_wear, temp_diff]], 
+                              columns=['Air temperature K', 'Process temperature K', 
+                                       'Rotational speed rpm', 'Torque Nm', 
+                                       'Tool wear min', 'Temp_Diff'])
+    
+    # Predict using the DataFrame
+    prediction = model.predict(input_data)
     
     if prediction[0] == 1:
         st.error("🚨 HIGH RISK: Failure Predicted! Maintenance recommended.")
