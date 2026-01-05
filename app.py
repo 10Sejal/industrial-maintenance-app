@@ -5,7 +5,7 @@ from fpdf import FPDF
 import base64
 
 # 1. Page Config & Professional Theme
-st.set_page_config(page_title="L&T Asset Reliability Hub", layout="wide")
+st.set_page_config(page_title="Asset Reliability Hub", layout="wide")
 
 # Custom CSS for L&T Brand feel (Blue/White)
 st.markdown("""
@@ -81,3 +81,4 @@ if st.button("Run Full Diagnostic"):
 
     with open("report.pdf", "rb") as f:
         st.download_button("📩 Download Diagnostic PDF", f, "Maintenance_Report.pdf")
+
