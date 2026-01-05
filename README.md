@@ -1,5 +1,5 @@
 Project Title: Industrial Equipment Failure Prediction & Diagnostic System
-Live App Link:https://industrial-maintenance-app-o3mbhgvizkhsxz5cchs7vm.streamlit.app/
+Live App Link:https://industrial-maintenance-app-dhvfyoetago59v9arexadn.streamlit.app/
 
 📌 Project Overview
 This project was developed to address unplanned downtime in heavy industrial machinery—a critical challenge for engineering firms like Larsen & Toubro (L&T). Using the AI4I 2020 Predictive Maintenance Dataset, I built an end-to-end Machine Learning solution that predicts equipment failure before it occurs.
